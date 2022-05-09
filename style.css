@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+html {
+  /* box-sizing: border-box; */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.keyboard__title {
+  font-family: "Press Start 2P", sans-serif;
+  margin: 10px 0px;
+  font-size: 3rem;
+}
+
+.keyboard__area {
+  width: 689px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 2rem;
+  border: 3px solid black;
+}
+
+.keyboard {
+  width: 704px;
+  padding: 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  border: 3px solid black;
+  background-color: rgb(197, 197, 197);
+  margin: 10px auto;
+}
+
+.keyboard__row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.keyboard__key {
+  width: 40px;
+  height: 40px;
+  margin-left: 6px;
+  background-color: grey;
+  color: white;
+  font-size: 1.5rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 3px #999;
+}
+
+.keyboard__key--ultra-wide {
+  width: 330px;
+}
+
+.keyboard__key--extra-wide {
+  width: 100px;
+}
+
+.keyboard__key--wide {
+  width: 86px;
+}
+
+#Delete {
+  width: 44px;
+}
+
+#Tab {
+  width: 50px;
+}
+
+.keyboard__key:hover {
+  background-color: rgb(12, 66, 146);
+}
+
+.keyboard__key.active {
+  background-color: rgb(12, 66, 146);
+  box-shadow: 2px 2px #666;
+  transform: translateY(2px);
+}
+
+.text {
+  margin: 10px 0px;
+  font-size: 1rem;
+  font-family: "Press Start 2P";
+}
