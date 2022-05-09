@@ -102,50 +102,43 @@ class Keyboard {
           } else if (key.id === "Digit4") {
             if (this.lang === "en") {
               key.textContent = shiftKey ? "$" : "4";
-            }
-            if (this.lang === "en") {
+            } else {
               key.textContent = shiftKey ? ";" : "4";
             }
           } else if (key.id === "Digit5") {
             if (this.lang === "en") {
               key.textContent = shiftKey ? "%" : "5";
-            }
-            if (this.lang === "en") {
+            } else {
               key.textContent = shiftKey ? "%" : "5";
             }
           } else if (key.id === "Digit6") {
             if (this.lang === "en") {
               key.textContent = shiftKey ? "^" : "6";
-            }
-            if (this.lang === "en") {
+            } else {
               key.textContent = shiftKey ? ":" : "6";
             }
           } else if (key.id === "Digit7") {
             if (this.lang === "en") {
               key.textContent = shiftKey ? "&" : "7";
-            }
-            if (this.lang === "en") {
+            } else {
               key.textContent = shiftKey ? "?" : "7";
             }
           } else if (key.id === "Digit8") {
             if (this.lang === "en") {
               key.textContent = shiftKey ? "*" : "8";
-            }
-            if (this.lang === "en") {
+            } else {
               key.textContent = shiftKey ? "*" : "8";
             }
           } else if (key.id === "Digit9") {
             if (this.lang === "en") {
               key.textContent = shiftKey ? "(" : "9";
-            }
-            if (this.lang === "en") {
+            } else {
               key.textContent = shiftKey ? "(" : "9";
             }
           } else if (key.id === "Digit0") {
             if (this.lang === "en") {
               key.textContent = shiftKey ? ")" : "0";
-            }
-            if (this.lang === "en") {
+            } else {
               key.textContent = shiftKey ? ")" : "0";
             }
           } else {
