@@ -291,6 +291,26 @@ class Keyboard {
         }
       }
     });
+
+    this.keyboard.addEventListener("mousedown", (event) => {
+      this.area.focus();
+      let keyDown = new KeyboardEvent("keydown", {
+        bubbles: true,
+        cancelable: true,
+        code: event.target.id,
+      });
+      document.dispatchEvent(keyDown);
+    });
+
+    this.keyboard.addEventListener("mouseup", (event) => {
+      this.area.focus();
+      let keyUp = new KeyboardEvent("keyup", {
+        bubbles: true,
+        cancelable: true,
+        code: event.target.id,
+      });
+      document.dispatchEvent(keyUp);
+    });
   }
   _switchLang(language) {
     Array.from(this.keyboard.querySelectorAll(".keyboard__key")).forEach(
