@@ -59,9 +59,9 @@ class Keyboard {
         if (!keyboardKeys[key.id].func) {
           if (key.id === "Backquote" && this.lang === "en") {
             key.textContent = shiftKey ? "~" : "`";
-          } else if (key.id === "Minus" && this.lang === "en") {
+          } else if (key.id === "Minus") {
             key.textContent = shiftKey ? "_" : "-";
-          } else if (key.id === "Equal" && this.lang === "en") {
+          } else if (key.id === "Equal") {
             key.textContent = shiftKey ? "+" : "=";
           } else if (key.id === "BracketLeft" && this.lang === "en") {
             key.textContent = shiftKey ? "{" : "[";
