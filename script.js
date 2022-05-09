@@ -209,6 +209,7 @@ class Keyboard {
 
       let key = document.getElementById(event.code);
       if (!key) {
+        console.log("test");
         event.preventDefault();
         return;
       }
@@ -223,10 +224,8 @@ class Keyboard {
         }
         this._capsLockSwitch(event.shiftKey);
       } else if (event.metaKey) {
-        console.log("test");
         key.classList.add("active");
       } else {
-        console.log(event.code);
         key.classList.add("active");
         if (event.shiftKey && event.altKey && !event.repeat) {
           event.preventDefault();

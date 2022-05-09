@@ -362,12 +362,6 @@ const keyboardLayout = [
       lang: { en: " ", ru: " " },
       width: "ultra-wide",
     },
-    {
-      code: "AltRight",
-      func: true,
-      lang: { en: "Alt", ru: "Alt" },
-      width: "regular",
-    },
 
     {
       code: "ArrowLeft",
