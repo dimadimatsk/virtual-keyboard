@@ -172,7 +172,7 @@ class Keyboard {
   }
 
   _pressDel() {
-    console.log('Del pressed');
+    
     if (this.area.selectionStart !== this.area.selectionEnd) {
       this._writeText('');
     } else {
@@ -187,12 +187,12 @@ class Keyboard {
   }
 
   _pressBackspace() {
-    console.log('Backspace pressed');
+    
     if (this.area.selectionStart !== this.area.selectionEnd) {
       this._writeText('');
     } else {
       let start = Math.max(0, this.area.selectionStart - 1);
-      console.log(start);
+      
 
       this.area.value =
         this.area.value.slice(0, start) +
@@ -209,7 +209,7 @@ class Keyboard {
 
       let key = document.getElementById(event.code);
       if (!key) {
-        console.log('test');
+        
         event.preventDefault();
         return;
       }
@@ -230,7 +230,7 @@ class Keyboard {
         if (event.shiftKey && event.altKey && !event.repeat) {
           event.preventDefault();
           this.lang = this.lang === 'ru' ? 'en' : 'ru';
-          console.log(this.lang);
+          
           this._switchLang(this.lang);
           localStorage.setItem('language', this.lang);
         } else if (!keyboardKeys[event.code].func) {
